@@ -29,10 +29,13 @@ function App() {
         </header>
         <div className="container">
           <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/posts" exact element={<Posts />} />
+            <Route path="/posts/:id" exact element={<Postitem />} />
             <Route path="/profile" exact element={<Profile />} />
             <Route path="/posts/:id" exact element={<Postitem />} />
+            <Route path="/" exact element={<Home />} />
+            <Route path="/posts" exact element={<Posts />} />
+
+            <Route render={() => <h3>Habib Its not found!</h3>} />
           </Routes>
         </div>
       </BrowserRouter>

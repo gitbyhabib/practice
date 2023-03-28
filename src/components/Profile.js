@@ -6,9 +6,7 @@ export default function Profile(props) {
   return (
     <div>
       Profile
-      <Link to={{ pathname: `$ {props.match.url}/posts` }}>
-        Posts of Profile
-      </Link>
+      <Link to="/posts">Posts of Profile</Link>
     </div>
   );
 }
